@@ -58,6 +58,18 @@
     cursor: pointer;
 }
 
+.viewAllButton {
+  background-color: #ff4d4d;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.viewAllButton:hover {
+  background-color: #ff6666;
+}
+
 .categories-div {
     padding: 0 20px;
     border:  1px  solid #838383;

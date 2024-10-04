@@ -1,0 +1,112 @@
+.container {
+    padding: 10px;
+    max-width: 100%;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .backButton {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  .searchIcon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .productsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .productCard {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .productImage {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .productDetails {
+    margin-top: 10px;
+  }
+  
+  .productName {
+    font-size: 0.9rem;
+  }
+  
+  .productPrice {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .originalPrice {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .discount {
+    color: red;
+  }
+  
+  .addButton {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+  }
+  
+  .sortButton, .filterButton {
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .productsGrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .addButton {
+      padding: 10px;
+    }
+  }
+  

@@ -2,6 +2,7 @@ import '../assets/styles/header.css';
 import img1 from "../assets/images/cate1.webp";
 import img2 from "../assets/images/cate2.webp";
 import img3 from "../assets/images/cate3.webp";
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
 const Header = () => {
@@ -41,7 +42,7 @@ const Header = () => {
            <div className='categories-div'>
                 <div className='categories'>
                     <p>All Categories</p>
-                    <p>View All</p>
+                    <Link to="/viewAll" >View All</Link>
                 </div>
                 <div className='categories-options'>
                     <button onClick={prevImages} disabled={currentIndex === 0} className='arrow-button'>
